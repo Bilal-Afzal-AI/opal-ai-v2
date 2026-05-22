@@ -1,78 +1,134 @@
-# 🏥 OPAL-AI — Intelligent Organ & Blood Donor Matching Platform
+# 🏥 OPAL-AI — AI-Powered Organ & Blood Donor Matching Platform
 
-OPAL-AI is an AI-powered healthcare donor matching platform built using FastAPI, Next.js, Supabase, Gemini AI, and Machine Learning.
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" width="100%" alt="OPAL-AI Banner"/>
+</p>
 
-The platform helps hospitals and healthcare staff:
-- manage blood and organ donors
-- find compatible donors
-- rank donor suitability using ML
-- analyze donor/request activity
-- interact with an AI healthcare assistant
+<p align="center">
+  <b>Intelligent Healthcare Matching System using AI, Machine Learning, FastAPI, Next.js, and Supabase</b>
+</p>
 
 ---
 
-# 🚀 Features
+# 🚨 The Problem
+
+Every day, hospitals and healthcare organizations face critical delays in finding compatible blood and organ donors.
+
+Traditional donor coordination systems often rely on:
+- manual searching
+- fragmented hospital records
+- delayed communication
+- spreadsheet-based workflows
+- inconsistent prioritization
+
+These inefficiencies can slow emergency response times and directly impact patient outcomes.
+
+---
+
+# 💡 The Solution — OPAL-AI
+
+OPAL-AI is an intelligent healthcare platform designed to streamline and automate donor-recipient matching using:
+
+- 🧠 Artificial Intelligence
+- 🤖 Machine Learning
+- 📍 Geo-aware matching
+- ⚡ Real-time analytics
+- 🏥 Healthcare workflow automation
+
+The platform intelligently ranks compatible donors based on:
+- blood compatibility
+- organ compatibility
+- urgency level
+- geographic distance
+- donor availability
+- ML-based suitability scoring
+
+---
+
+# ✨ Key Features
 
 ## 🔹 Donor Management
-- Add blood donors
-- Add organ donors
-- Hospital registration
+- Blood donor registration
+- Organ donor registration
+- Hospital management
 - Real-time donor database
+
+---
 
 ## 🔹 Intelligent Matching Engine
 - Blood compatibility matching
 - Organ compatibility matching
-- Urgency-aware ranking
-- Distance-aware scoring
+- Distance-aware ranking
+- Urgency-based prioritization
 - Availability scoring
-- ML-enhanced donor ranking
-
-## 🔹 AI Assistant
-- Gemini-powered healthcare chatbot
-- Donor matching explanations
-- Platform assistance
-- Safe healthcare workflow guidance
-
-## 🔹 Dashboard Analytics
-- Blood donor distribution charts
-- Organ donor distribution charts
-- Urgency breakdown analytics
-- Match request history
-
-## 🔹 Machine Learning Integration
-- Synthetic dataset generation
-- RandomForest ML ranking model
-- Hybrid rule-based + ML scoring
-- Predictive donor suitability scoring
+- AI-enhanced recommendations
 
 ---
 
-# 🧠 Tech Stack
+## 🔹 AI Healthcare Assistant
+- Gemini-powered chatbot
+- Donor matching explanations
+- Healthcare workflow guidance
+- Intelligent support responses
 
-## Frontend
+---
+
+## 🔹 Dashboard Analytics
+- Blood group distribution charts
+- Organ donor analytics
+- Urgency breakdown visualization
+- Match request history
+- Real-time dashboard metrics
+
+---
+
+## 🔹 Machine Learning Integration
+- RandomForest ranking model
+- Hybrid rule-based + ML scoring
+- Predictive donor suitability ranking
+- Synthetic dataset generation pipeline
+
+---
+
+# 🧠 System Architecture
+
+<p align="center">
+  <img src="assets/screenshots/architecture-diagram.png" width="100%" alt="Architecture Diagram"/>
+</p>
+
+---
+
+# 🛠️ Tech Stack
+
+# Frontend
 - Next.js
 - TypeScript
 - Tailwind CSS
 - Recharts
 
-## Backend
+# Backend
 - FastAPI
 - Python
 - Pydantic
+- REST APIs
 
-## Database
+# Database
 - Supabase
 
-## AI & ML
-- Gemini AI
+# AI & ML
+- Google Gemini AI
 - Scikit-learn
 - Pandas
 - NumPy
 - Joblib
 
+# Tools & DevOps
+- GitHub
+- Docker (In Progress)
+
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```bash
 OPAL-AI V2/
@@ -81,6 +137,7 @@ OPAL-AI V2/
 │   ├── app/
 │   │   ├── api/
 │   │   ├── core/
+│   │   ├── database/
 │   │   ├── schemas/
 │   │   ├── services/
 │   │   ├── ml/
@@ -96,31 +153,102 @@ OPAL-AI V2/
 │   │
 │   └── package.json
 │
+├── assets/
+│   └── screenshots/
+│
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# 📸 Screenshots
 
-## 1️⃣ Clone Repository
+## 📊 Dashboard
+
+<p align="center">
+  <img src="assets/screenshots/dashboard.png" width="100%" />
+</p>
+
+---
+
+## 🩸 Blood Donor Management
+
+<p align="center">
+  <img src="assets/screenshots/blood-donors.png" width="100%" />
+</p>
+
+---
+
+## 🫀 Organ Donor Management
+
+<p align="center">
+  <img src="assets/screenshots/organ-donors.png" width="100%" />
+</p>
+
+---
+
+## 🏥 Hospital Management
+
+<p align="center">
+  <img src="assets/screenshots/hospitals.png" width="100%" />
+</p>
+
+---
+
+## 🤝 Intelligent Matching Engine
+
+<p align="center">
+  <img src="assets/screenshots/matching.png" width="100%" />
+</p>
+
+---
+
+## 📜 Match Request History
+
+<p align="center">
+  <img src="assets/screenshots/match-history.png" width="100%" />
+</p>
+
+---
+
+## 🤖 AI Chatbot Assistant
+
+<p align="center">
+  <img src="assets/screenshots/chatbot.png" width="100%" />
+</p>
+
+---
+
+## ⚙️ FastAPI Swagger Documentation
+
+<p align="center">
+  <img src="assets/screenshots/api-docs.png" width="100%" />
+</p>
+
+---
+
+# ⚙️ Installation Guide
+
+# 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/opal-ai.git
-cd opal-ai
+git clone https://github.com/Bilal-Afzal-AI/opal-ai-v2.git
+cd opal-ai-v2
 ```
 
 ---
 
 # 🔧 Backend Setup
 
-## Create virtual environment
+## Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-## Activate environment
+---
+
+## Activate Environment
 
 ### Windows
 
@@ -130,7 +258,7 @@ venv\Scripts\activate
 
 ---
 
-## Install dependencies
+## Install Dependencies
 
 ```bash
 cd backend
@@ -149,13 +277,13 @@ GEMINI_API_KEY=
 
 ---
 
-## Run backend
+## Run Backend
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Backend runs on:
+Backend URL:
 
 ```txt
 http://127.0.0.1:8000
@@ -165,7 +293,7 @@ http://127.0.0.1:8000
 
 # 💻 Frontend Setup
 
-## Install packages
+## Install Packages
 
 ```bash
 cd frontend
@@ -182,13 +310,13 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 
 ---
 
-## Run frontend
+## Run Frontend
 
 ```bash
 npm run dev
 ```
 
-Frontend runs on:
+Frontend URL:
 
 ```txt
 http://localhost:3000
@@ -196,15 +324,17 @@ http://localhost:3000
 
 ---
 
-# 🤖 ML Pipeline
+# 🤖 Machine Learning Pipeline
 
-## Generate training dataset
+## Generate Training Dataset
 
 ```bash
 python app/ml/scripts/generate_training_data.py
 ```
 
-## Train ML model
+---
+
+## Train ML Model
 
 ```bash
 python app/ml/scripts/train_ranking_model.py
@@ -212,55 +342,62 @@ python app/ml/scripts/train_ranking_model.py
 
 ---
 
-# 📊 Current Capabilities
+# 📈 Current Capabilities
 
-- Real-time donor management
-- AI-assisted healthcare chatbot
-- ML-enhanced donor ranking
-- Analytics dashboard
-- Match request tracking
-- Geo-aware matching
-- Hybrid scoring system
+✅ AI-powered donor matching  
+✅ Machine learning ranking engine  
+✅ Gemini healthcare chatbot  
+✅ Real-time analytics dashboard  
+✅ Geo-aware donor scoring  
+✅ Match request tracking  
+✅ Full-stack healthcare platform  
+✅ Supabase cloud database integration  
 
 ---
 
 # 🔒 Future Improvements
 
-- JWT authentication
-- Role-based access control
-- Docker deployment
-- CI/CD pipelines
-- Real medical dataset integration
-- Advanced ML models
-- Cloud deployment
+- JWT Authentication
+- Role-Based Access Control
+- Docker Deployment
+- CI/CD Pipelines
+- Cloud Deployment
+- Real Healthcare Dataset Integration
+- Advanced Deep Learning Ranking
+- Mobile Application
 
 ---
 
-# 📸 Screenshots
-
-(Add screenshots here later)
-
----
-
-# 👨‍💻 Author
-
-Bilal Mohammad Afzal
-
-- GitHub: https://github.com/
-- LinkedIn: https://linkedin.com/
-
-#  Team
-
-
-
----
-
-# ⭐ Project Vision
+# 🌍 Project Vision
 
 OPAL-AI aims to become an intelligent healthcare coordination platform that combines:
-- AI assistance
-- Machine Learning
-- Real-time donor coordination
-- Healthcare workflow automation
 
-to support faster and smarter donor-recipient matching.
+- AI Assistance
+- Machine Learning
+- Real-time Donor Coordination
+- Healthcare Workflow Automation
+
+to support faster, smarter, and more efficient donor-recipient matching systems.
+
+---
+---
+
+# 🤝 Team & Contributions
+
+## 👨‍💻 Bilal Mohammad Afzal
+- Project Creator & Lead Developer
+- AI/ML Integration
+- Backend & Frontend Development
+- Healthcare Matching System Design
+
+
+## 👩‍💻 Mariuram
+A very supportive and hardworking teammate who contributed with dedication, collaboration, and continuous support throughout the development of OPAL-AI.Her teamwork, effort, and positive contribution played an important role in the project’s progress and success.
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, consider giving it a star ⭐ on GitHub.
+
+It helps support the project and increases visibility.
